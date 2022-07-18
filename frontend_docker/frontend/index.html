@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Project usw</title>
+    <meta property="og:title" content="Presentation Page1" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Open Sans;
+        font-size: 18px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.55;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      data-tag="font"
+    />
+    <style>
+      html {
+      scroll-behavior: smooth;
+      }
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="home.js"></script>
+  </head>
+  <body>
+    <div>
+      <link href="./home.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <div data-role="Header" class="home-navbar-container">
+          <div class="home-navbar">
+            <div class="home-logo"></div>
+            <div class="home-links-container">
+              <a href="#about" class="home-link anchor">About</a>
+              <a href="#scrape" class="home-link01 anchor">Scraping</a>
+              <a href="#neuronalnetwork" class="home-link02 anchor">LSTM</a>
+              <a href="#visualizedb" class="home-link03 anchor">
+                Visualize Data
+              </a>
+              <a href="#overviewdatabase" class="home-link04 anchor">
+                Database
+              </a>
+              <a href="#installingguide" class="home-link05 anchor">
+                What you need
+              </a>
+            </div>
+            <div class="home-cta-container">
+              <div data-type="BurgerMenu" class="home-burger-menu">
+                <svg viewBox="0 0 1024 1024" class="home-icon">
+                  <path
+                    d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div data-type="MobileMenu" class="home-mobile-menu">
+              <div class="home-top">
+                <img
+                  alt="image"
+                  src="public/playground_assets/default-img.svg"
+                  class="home-image"
+                />
+                <div data-type="CloseMobileMenu" class="home-container01">
+                  <svg viewBox="0 0 1024 1024" class="home-icon02">
+                    <path
+                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="home-mid">
+                <div class="home-links-container1">
+                  <a href="#features" class="home-link06 anchor">features</a>
+                  <a href="#services" class="home-link07 anchor">services</a>
+                  <span class="home-link08 anchor">About Us</span>
+                  <a href="#contact" class="home-link09 anchor">contact</a>
+                </div>
+                <button class="home-cta-btn anchor button">
+                  sTART BUILDING
+                </button>
+              </div>
+              <div class="home-bot">
+                <div class="home-social-links-container">
+                  <svg viewBox="0 0 950.8571428571428 1024" class="home-icon04">
+                    <path
+                      d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="home-icon06"
+                  >
+                    <path
+                      d="M713.143 73.143c90.857 0 164.571 73.714 164.571 164.571v548.571c0 90.857-73.714 164.571-164.571 164.571h-107.429v-340h113.714l17.143-132.571h-130.857v-84.571c0-38.286 10.286-64 65.714-64l69.714-0.571v-118.286c-12-1.714-53.714-5.143-101.714-5.143-101.143 0-170.857 61.714-170.857 174.857v97.714h-114.286v132.571h114.286v340h-304c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="home-icon08"
+                  >
+                    <path
+                      d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-hero">
+          <div class="home-hero-text-container">
+            <h1 class="home-heading section-Heading">
+              Build your own neuronal network, and train it with your data!
+            </h1>
+            <span class="home-text section-Text">
+              <span>This website is primarily about data.</span>
+              <br />
+              <span>
+                I have tried to map the typical process a Data Scientist goes
+                through on this website.
+              </span>
+              <br />
+              <span>Therefore there are three features:</span>
+              <br />
+              <span></span>
+              <span>
+                The first feature is data sourcing, where you can generate any
+                Twitter data and stock data 60 days back, that is then stored in
+                your database.
+              </span>
+              <br />
+              <span>
+                The second feature is data analysis, where you can see
+                correlations between your data with the help of an LSTM model,
+                in short a small AI.
+              </span>
+              <br />
+              <span>
+                The third feature is data visualization, where you can visualize
+                your data any way you want.
+              </span>
+              <br />
+              <span></span>
+              <span>
+                I hope that the application can help you with your datasience
+                project.
+              </span>
+              <br />
+              <span></span>
+              <span>Greetings</span>
+              <span></span>
+              <span>Ivan.</span>
+              <br />
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fFByb2dyYW1taW5nfGVufDB8fHx8MTY1NzQ0MDczNA&amp;ixlib=rb-1.2.1&amp;w=800"
+            alt="image"
+            class="home-image1"
+          />
+        </div>
+        <div class="home-section-separator"></div>
+        <div id="about" class="home-features">
+          <div class="home-heading-container">
+            <h2 class="home-text16 section-Heading">Tell your story</h2>
+          </div>
+          <div class="home-cards-container">
+            <div class="home-feature-card">
+              <span class="home-heading1 card-Heading">Why</span>
+              <span class="home-text17 card-Text">
+                This project was created during my time at the University of
+                HTW- Berlin and served as an exam.
+              </span>
+            </div>
+            <div class="home-feature-card1">
+              <span class="home-heading2 card-Heading">What</span>
+              <span class="home-text18 card-Text">
+                This project was developed during the course Data Science from
+                the 5th semester.
+              </span>
+            </div>
+            <div class="home-feature-card2">
+              <span class="home-heading3 card-Heading">How</span>
+              <span class="home-text19 card-Text">
+                This project is a single work and was mostly implemented with
+                the programming language Python, and the React framework.
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="home-section-separator1"></div>
+        <div id="scrape" class="home-services">
+          <div class="home-service-card">
+            <div class="home-card-content">
+              <h3 class="home-text20 bigCard-Heading">Scraping data</h3>
+            </div>
+            <div class="home-service-card1">
+              <form class="home-form">
+                <h4 class="home-text21">Keyword for scraping</h4>
+                <input
+                  type="text"
+                  id="scrapekeyword"
+                  required
+                  placeholder="Keyword"
+                  class="home-textinput input"
+                />
+                <h4 class="home-text22">Stock you can choose</h4>
+                <select id="scrapestock" required class="home-select">
+                </select>
+                <h4 class="home-text23">
+                  Do you want to scrape for 15 minutes intervals?
+                </h4>
+                <select class="home-select01">
+                  <option value="15m" selected>15 minutes</option>
+                  <option value="30m">30 minutes</option>
+                  <option value="60m">60 minutes</option>
+                  <option value="90m">90 minutes</option>
+                </select>
+                <p class="home-text24">
+                  By default the scraper gnerates data for a 30 minutes
+                  interval.
+                </p>
+                <h4 class="home-text25">Select your periode</h4>
+                <p class="home-text26">From</p>
+                <input
+                  type="date"
+                  id="scrapestartdate"
+                  required
+                  placeholder="placeholder"
+                  class="home-textinput1 input"
+                />
+                <p class="home-text27">To</p>
+                <input
+                  type="date"
+                  id="scrapeenddate"
+                  required
+                  placeholder="placeholder"
+                  class="home-textinput2 input"
+                />
+                <div class="home-container02">
+                  <button
+                    id="buttontostartscrape"
+                    type="button"
+                    onclick = "scrape()"
+                    value="button"
+                    class="home-button anchor button"
+                  >
+                    <span>Start</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="home-container03">
+              <h1 class="home-text29">
+                <span class="home-text30">Your last scraping results</span>
+              </h1>
+              <div class="home-stats">
+                <div class="home-stat">
+                  <h1 class="home-text31">
+                    <span id="stock" >50</span>
+                  </h1>
+                  <span class="home-text34">Stock</span>
+                  <span class="home-text35">
+                    For which stock you generated data
+                  </span>
+                </div>
+                <div class="home-stat1">
+                  <h1 class="home-text36"><span id="keyword" >369</span></h1>
+                  <span class="home-text38">Keyword</span>
+                  <span class="home-text39">
+                    For which Keyword you scraped twitter
+                  </span>
+                </div>
+                <div class="home-stat2">
+                  <h1 class="home-text40">
+                    <span  id="days" >500</span>
+                  </h1>
+                  <span class="home-text43">Days</span>
+                  <span class="home-text44">
+                    For how many days generate data
+                  </span>
+                </div>
+                <div class="home-stat3">
+                  <h1 class="home-text45"><span  id="rows">24/7</span></h1>
+                  <span class="home-text47">Rows</span>
+                  <span class="home-text48">How many rows did you create</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-section-separator2"></div>
+        <div id="neuronalnetwork" class="home-services1">
+          <div class="home-service-card2">
+            <div class="home-card-content1">
+              <h3 class="home-text49 bigCard-Heading">
+                <span>Build and run your LSTM model.</span>
+                <br />
+                <span>Neuronal Network.</span>
+              </h3>
+            </div>
+            <div class="home-container04">
+              <form class="home-form01">
+                <h4 class="home-heading4">
+                  Step 1. Selecte the stock you want to work with.
+                </h4>
+                <select id="nnstock" required class="home-select02">
+                </select>
+              </form>
+            </div>
+            <div class="home-container05">
+              <form class="home-form02">
+                <h4 class="home-text53">
+                  Step 2. Selecte twitter-dataset, based on the keyword.
+                </h4>
+                <select id="nnkeyword" required class="home-select03">
+                </select>
+              </form>
+            </div>
+            <div class="home-container06">
+              <form class="home-form03">
+                <h4 class="home-text54">
+                  Step 3. Selecte the columns from your data table yoou want to
+                  run your prediction with.
+                </h4>
+                <div class="home-container07">
+                  <span class="home-text55">
+                    Do you want to select columns randomly?
+                  </span>
+                  <input
+                    type="checkbox"
+                    id="nnrandomfeature"
+                    class="home-checkbox"
+                    onchange = "randomfeatures()"
+                  />
+                </div>
+                <select multiple id="nnselectcolumns" class="home-select04">
+                </select>
+              </form>
+            </div>
+            <div class="home-container08">
+              <form class="home-form04">
+                <h4 class="home-text56">
+                  Step 4. Selecte your variable you want to predict.
+                </h4>
+                <select id="nngoalvariable" class="home-select05">
+                </select>
+              </form>
+            </div>
+            <div class="home-service-card3">
+              <form enctype="text/plain" class="home-form05">
+                <h4 class="home-heading5">
+                  Step 5. define your Hyperparameters for your model.
+                </h4>
+                <div class="home-container09">
+                  <p class="home-text57">
+                    Do you want to select random hyperparameters?
+                  </p>
+                  <input
+                    type="checkbox"
+                    id="nnrandomhyperparam"
+                    class="home-checkbox1"
+                    onchange="randomHyperparams()"
+                  />
+                </div>
+                <h4 class="home-heading6">
+                  How many Models you want to train (Epochs)?
+                </h4>
+                <input
+                  type="number"
+                  id="nnepochs"
+                  max="50"
+                  min="10"
+                  step="1"
+                  required
+                  placeholder="Between ten to fifty epochs possible"
+                  class="home-textinput3 input"
+                />
+                <h4 class="home-text58">
+                  With how many layers do you want to build your model?
+                </h4>
+                <input
+                  type="number"
+                  id="nnlayer"
+                  max="6"
+                  min="1"
+                  step="1"
+                  required
+                  placeholder="Between one to six layers possible"
+                  class="home-textinput4 input"
+                />
+                <h4 class="home-text59">
+                  Choose a dropout rate for better performance.
+                </h4>
+                <select id="nndropout" required class="home-select06">
+                  <option value="0.25">Dropoutrate of 0.25</option>
+                  <option value="0.5">Dropoutrate of 0.5</option>
+                  <option value="0.75">Dropoutrate of 0.75</option>
+                </select>
+                <h4 class="home-text60">
+                  Choose a lerningrate for better performance.
+                </h4>
+                <select id="nnlerningrate" required class="home-select07">
+                  <option value="0.1">Lerningrate of 0.1</option>
+                  <option value="0.01">Lerningrate of 0.01</option>
+                  <option value="0.001">Lerningrate of 0.001</option>
+                </select>
+                <h4 class="home-text61">Select your hidden size.</h4>
+                <input
+                  type="number"
+                  id="nnhiddensize"
+                  max="500"
+                  min="50"
+                  step="1"
+                  required
+                  placeholder="Between fifty to five-houndred layers possible"
+                  class="home-textinput5 input"
+                />
+                <div class="home-container10">
+                  <button
+                    id="buttonstarttraining"
+                    type="button"
+                    onclick = "runLstm()"
+                    value="button"
+                    class="home-button1 button anchor"
+                  >
+                    <span>Start</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="home-section-separator3"></div>
+        <div id="visualizedb" class="home-services2">
+          <div class="home-service-card4">
+            <div class="home-card-content2">
+              <h3 class="home-text63 bigCard-Heading">
+                Visualize your data from our database
+              </h3>
+            </div>
+            <div class="home-container11">
+              <form class="home-form06">
+                <h4 class="home-text64">
+                  Step 1. Selecte the stock you want to work with.
+                </h4>
+                <select id="visustock" class="home-select08">
+                </select>
+              </form>
+            </div>
+            <div class="home-container12">
+              <form class="home-form07">
+                <h4 class="home-text65">
+                  Step 2. Selecte your variable you want to predict.
+                </h4>
+                <select id="visuscrape" class="home-select09">
+                </select>
+              </form>
+            </div>
+            <div class="home-container13">
+              <form class="home-form08">
+                <h4 class="home-text66">
+                  Step 3. Selecte the columns from your data table yoou want to
+                  run your prediction with.
+                </h4>
+                <select multiple id="visuselectcolumns" class="home-select10">
+                </select>
+              </form>
+            </div>
+            <div class="home-container14">
+              <form class="home-form09">
+                <h4 class="home-text67">
+                  Step 4. How do you want to plot your data.
+                </h4>
+                <select id="visuwhichplot" class="home-select11">
+                  <option value="plot">Line plot</option>
+                  <option value="bar">Bar plot</option>
+                  <option value="scatter">Scatter plot</option>
+                </select>
+              </form>
+            </div>
+            <div class="home-container15">
+              <button
+                id="buttonplot"
+                type="button"
+                onclick = ""
+                value="button"
+                class="home-button2 button anchor"
+              >
+                <span>Plot</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="home-section-separator4"></div>
+        <div id="overviewdatabase" class="home-services3">
+          <div class="home-service-card5">
+            <div class="home-card-content3">
+              <h3 class="home-text69 bigCard-Heading">
+                See whats insight of your database
+              </h3>
+            </div>
+            <div class="home-container16">
+              <form class="home-form10">
+                <h4 class="home-text70">
+                  Step 1. Selecte the table you want to get information about.
+                </h4>
+                <select id="ovtable" class="home-select12">
+                </select>
+              </form>
+            </div>
+            <div class="home-container17">
+              <form class="home-form11">
+                <h4 class="home-text71">
+                  Step 2. Selecte, based on the keyword/stockticker, from which
+                  data do you want to have information.
+                </h4>
+                <select id="ovkeyword" class="home-select13">
+                </select>
+              </form>
+            </div>
+          </div>
+          <div class="home-container19">
+            <h1 class="home-text73">Overview about the choosen keyword</h1>
+            <div class="home-stats1">
+              <div class="home-stat4">
+                <h1 class="home-text74">
+                  <span id="ovskeyword">50</span>
+                </h1>
+                <span class="home-text77">Keyword</span>
+                <span class="home-text78">
+                  For which keyword you see the informations
+                </span>
+              </div>
+              <div class="home-stat5">
+                <h1 class="home-text79">
+                  <span id="ovsdays">500</span>
+                </h1>
+                <span class="home-text82">Days</span>
+                <span class="home-text83">
+                  How many days you have of the choosen element
+                </span>
+              </div>
+              <div class="home-stat6">
+                <h1  class="home-text84"><span id="ovsrows">24/7</span></h1>
+                <span class="home-text86">Rows</span>
+                <span class="home-text87">
+                  How many rows you have of the choosen element
+                </span>
+              </div>
+              <div class="home-stat7">
+                <h1  class="home-text88"><span id="ovsvalues">369</span></h1>
+                <span class="home-text90">Values</span>
+                <span class="home-text91">
+                  How many single values you have of the choosen element
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-section-separator5"></div>
+        <div id="installingguide" class="home-contact">
+          <div class="home-content-container">
+            <h2 class="home-text92 section-Heading">
+              This is what you need to preinstall, to use this tool:
+            </h2>
+            <div class="home-locations-container">
+              <div class="home-location-1">
+                <span class="home-heading7">Downloadlinks:</span>
+                <div class="home-email">
+                  <svg viewBox="0 0 1024 1024" class="home-icon12">
+                    <path
+                      d="M512 909.312l-303.829-303.829c-49.92-49.92-49.92-131.115 0-180.992 46.677-46.677 127.061-48.555 175.829-4.907v-206.251c0-70.571 57.429-128 128-128s128 57.429 128 128v206.251c48.768-43.648 129.152-41.771 175.829 4.907 49.92 49.877 49.92 131.072 0 180.992l-303.829 303.829zM298.667 472.32c-11.435 0-22.101 4.437-30.165 12.501-16.683 16.64-16.683 43.648 0 60.331l243.499 243.499 243.499-243.499c16.683-16.683 16.683-43.691 0-60.331-16.171-16.171-44.16-16.171-60.331 0l-140.501 140.501v-411.989c0-23.509-19.115-42.667-42.667-42.667s-42.667 19.157-42.667 42.667v411.989l-140.501-140.501c-8.064-8.064-18.731-12.501-30.165-12.501z"
+                    ></path>
+                  </svg>
+                  <a
+                    href="https://www.tutorialspoint.com/how-to-install-python-in-windows"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    Python
+                  </a>
+                </div>
+                <div class="home-phone">
+                  <svg viewBox="0 0 1024 1024" class="home-icon14">
+                    <path
+                      d="M512 909.312l-303.829-303.829c-49.92-49.92-49.92-131.115 0-180.992 46.677-46.677 127.061-48.555 175.829-4.907v-206.251c0-70.571 57.429-128 128-128s128 57.429 128 128v206.251c48.768-43.648 129.152-41.771 175.829 4.907 49.92 49.877 49.92 131.072 0 180.992l-303.829 303.829zM298.667 472.32c-11.435 0-22.101 4.437-30.165 12.501-16.683 16.64-16.683 43.648 0 60.331l243.499 243.499 243.499-243.499c16.683-16.683 16.683-43.691 0-60.331-16.171-16.171-44.16-16.171-60.331 0l-140.501 140.501v-411.989c0-23.509-19.115-42.667-42.667-42.667s-42.667 19.157-42.667 42.667v411.989l-140.501-140.501c-8.064-8.064-18.731-12.501-30.165-12.501z"
+                    ></path>
+                  </svg>
+                  <a
+                    href="https://docs.docker.com/engine/install/ubuntu/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    Docker
+                  </a>
+                </div>
+                <div class="home-phone1">
+                  <svg viewBox="0 0 1024 1024" class="home-icon16">
+                    <path
+                      d="M512 909.312l-303.829-303.829c-49.92-49.92-49.92-131.115 0-180.992 46.677-46.677 127.061-48.555 175.829-4.907v-206.251c0-70.571 57.429-128 128-128s128 57.429 128 128v206.251c48.768-43.648 129.152-41.771 175.829 4.907 49.92 49.877 49.92 131.072 0 180.992l-303.829 303.829zM298.667 472.32c-11.435 0-22.101 4.437-30.165 12.501-16.683 16.64-16.683 43.648 0 60.331l243.499 243.499 243.499-243.499c16.683-16.683 16.683-43.691 0-60.331-16.171-16.171-44.16-16.171-60.331 0l-140.501 140.501v-411.989c0-23.509-19.115-42.667-42.667-42.667s-42.667 19.157-42.667 42.667v411.989l-140.501-140.501c-8.064-8.064-18.731-12.501-30.165-12.501z"
+                    ></path>
+                  </svg>
+                  <a
+                    href="https://stackoverflow.com/questions/2532234/how-to-run-a-makefile-in-windows"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    Makefile
+                  </a>
+                </div>
+                <button id="initdb"
+                  type="button"
+                  onclick = "initdb()"
+                  value="button"
+                  class="home-button4 button"
+                >
+                  Initialize database
+                </button>
+              </div>
+            </div>
+          </div>
+          <img
+            alt="image"
+            src="https://images.unsplash.com/photo-1452457750107-cd084dce177d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDV8fExhcHRvcHxlbnwwfHx8fDE2NTYzMTk0NzU&amp;ixlib=rb-1.2.1&amp;w=1500"
+            class="home-image2"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+  </body>
+</html>

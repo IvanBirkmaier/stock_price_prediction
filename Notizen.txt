@@ -1,0 +1,29 @@
+Frontend:
+    1. Website mit dem ich das Frontend designed habe: https://teleporthq.io/
+    3. Frontend starten mit cd frontend_docker und dann make dockerstart
+    4. Frontend erreichbar unter http://localhost:8081 falls dieser Port belegt bitte unter File  default.conf unter:
+                                                                                                                        server{
+                                                                                                                         listen 8081 <- hier ändern
+                                                                                                                         .....etc   
+                                                                                                                        }
+    5. Installing guide Docker: https://docs.docker.com/engine/install/ubuntu/
+Backend:
+    1.Backend erreichbar unter: http://localhost:8000      
+    2. Backend starten über CMD mit : uvicorn backend.controller.apiController:app --reload 
+    3. Falls Port 8000 belegt dann --host ${HOST} --port ${PORT} selber festlegen.
+    4. Falls Ports umdefiniert werden müssen, bitte in File apiController unter origin URLs ändern.
+
+  
+Dockerbefehle:
+	1. docker kill $(docker ps -q) -> Stoppt alle laufenden Container
+	2. docker rm -vf $(docker ps -aq) -> Löscht alle erstellten Container
+	3. docker rmi -f $(docker images -aq) -> Löscht alle erstellten images
+    4 docker images -> Zeigt alle gebauten Images 
+    5. docker ps -> zeigt alle Container + die laufenden
+
+Was muss installiert werde:
+    1. Docker
+    2. MySQL
+    3. (ADDON) Makefile
+
+

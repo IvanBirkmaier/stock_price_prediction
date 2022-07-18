@@ -1,0 +1,7 @@
+{
+    "python.analysis.extraPaths": [
+        "./src/main/backend/python/services/database",
+        "./backend/main/services/featureEningering",
+        "./backend/main/services/featureEningering"
+    ]
+}
