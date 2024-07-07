@@ -1,6 +1,6 @@
 FROM nginx:1.21.6-alpine
 COPY default.conf /etc/nginx/conf.d/
-COPY frontend /usr/share/nginx/html
+COPY src /usr/share/nginx/html
 
 RUN apk add --upgrade apk-tools && \
  apk update && \
